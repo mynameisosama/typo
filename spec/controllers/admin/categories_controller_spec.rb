@@ -63,4 +63,15 @@ describe Admin::CategoriesController do
     assert_raise(ActiveRecord::RecordNotFound) { Category.find(test_id) }
   end
   
+  describe "GET Category page" do
+    it "opens new category form" do
+      get :new
+      expect(assigns(:category)).to be_a_new(Category)
+    end
+    
+    it "shows all existing categories" do
+      get :new
+      expect(assigns(:categories)).to eq(Category.all)
+    end
+  end
 end
