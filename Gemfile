@@ -51,7 +51,7 @@ group :development, :test do
   gem 'factory_girl', '~> 2.2'
   gem 'webrat'
   gem 'rspec-rails', '~> 2.0'
-  gem 'simplecov', :require => false
+  gem 'simplecov'
   gem 'sqlite3'
   gem 'cucumber'
   gem 'cucumber-rails', :require => false
