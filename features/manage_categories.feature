@@ -14,8 +14,7 @@ Feature: Manage categories
     And I should see "General"
 
   Scenario: create categories
-    Given I am on the new categories page
-    And I fill in "category_name" with "programming"
+    When I fill in "category_name" with "programming"
     And I fill in "category_keywords" with "python"
     And I fill in "category_description" with "the best"
     And I press "Save"
